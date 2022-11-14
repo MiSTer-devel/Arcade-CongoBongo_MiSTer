@@ -6,7 +6,8 @@
 	<manufacturer>Sega/Gremlin</manufacturer>
 	<category>Isometric Platform</category>
 	<category>Jungle</category>
-	<setname>Congo_Bongo</setname>
+	<setname>congo</setname>
+	<rotation>vertical (cw)</rotation>
 	<rbf>CongoBongo</rbf>
 	<switches default="7F">
 		<dip bits="0,1"		name="Bonus at"		ids="40.000,20.000,30.000,10.000"/>
