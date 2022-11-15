@@ -1,6 +1,8 @@
 <misterromdescription>
 	<name>CongoBongo</name>
-	<mameversion>0000</mameversion>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<mameversion>0248</mameversion>
 	<mratimestamp>202211130000</mratimestamp>
 	<year>1983</year>
 	<manufacturer>Sega/Gremlin</manufacturer>
@@ -20,26 +22,26 @@
 	<rom index="1">
 		<part>00</part>
 	</rom>
-	<rom index="0" zip="congo.zip" md5="none">
-		<part name="congo_rev_c_rom1.u21"/>
-		<part name="congo_rev_c_rom2a.u22"/>
-		<part name="congo_rev_c_rom3.u23"/>
-		<part name="congo_rev_c_rom4.u24"/>
-		<part name="tip_top_rom_5.u76"/>
-		<part name="tip_top_rom_5.u76"/>
-		<part name="tip_top_rom_6.u57"/>
-		<part name="tip_top_rom_7.u58"/>
-		<part name="tip_top_rom_8.u93"/>
-		<part name="tip_top_rom_9.u94"/>
-		<part name="tip_top_rom_10.u95"/>
-		<part name="tip_top_rom_11.u77"/>
-		<part name="tip_top_rom_14.u104"/>
-		<part name="tip_top_rom_12.u78"/>
-		<part name="tip_top_rom_13.u79"/>
-		<part name="tip_top_rom_16.u106"/>
-		<part name="tip_top_rom_15.u105"/>
-		<part name="tip_top_rom_17.u19"/>
-		<part name="mr019.u87"/>
+	<rom index="0" zip="congo.zip" md5="cd3a3bc0364ae3916edf5d1bec211c0a">
+		<part crc="09355b5b" name="congo_rev_c_rom1.u21" />
+		<part crc="1c5e30ae" name="congo_rev_c_rom2a.u22" />
+		<part crc="5ee1132c" name="congo_rev_c_rom3.u23" />
+		<part crc="5332b9bf" name="congo_rev_c_rom4.u24" />
+		<part crc="7bf6ba2b" name="tip_top_rom_5.u76" />
+		<part crc="7bf6ba2b" name="tip_top_rom_5.u76" />
+		<part crc="d637f02b" name="tip_top_rom_6.u57" />
+		<part crc="80927943" name="tip_top_rom_7.u58" />
+		<part crc="db99a619" name="tip_top_rom_8.u93" />
+		<part crc="93e2309e" name="tip_top_rom_9.u94" />
+		<part crc="f27a9407" name="tip_top_rom_10.u95" />
+		<part crc="73e2709f" name="tip_top_rom_11.u77" />
+		<part crc="bf9169fe" name="tip_top_rom_14.u104" />
+		<part crc="15e3377a" name="tip_top_rom_12.u78" />
+		<part crc="1d1321c8" name="tip_top_rom_13.u79" />
+		<part crc="cb6d5775" name="tip_top_rom_16.u106" />
+		<part crc="7b15a7a4" name="tip_top_rom_15.u105" />
+		<part crc="5024e673" name="tip_top_rom_17.u19" />
+		<part crc="b788d8ae" name="mr019.u87" />
 	</rom>
 	<rom index="2" md5="none">
 		<part>00</part>
