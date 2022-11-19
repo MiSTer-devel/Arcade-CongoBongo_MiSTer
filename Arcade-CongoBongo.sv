@@ -210,6 +210,7 @@ localparam CONF_STR = {
 	"-;",
 //	"O6,Service,Off,On;",
 	"O7,Flip,Off,On;",
+	"OA,Diagonal joystick,Off,On;",
 	"-;",
 	"R0,Reset;",
 	"J1,Fire 1,Fire 2,Start 1P,Start 2P,Coin,Pause;",
@@ -328,6 +329,23 @@ wire m_fire_a  = m_fire1a | m_fire2a;
 wire m_fire_b  = m_fire1b | m_fire2b;
 wire m_pause   = joy1[8];
 
+wire m_north, m_south, m_east, m_west;
+
+always @(*) begin
+	if (~status[10]) begin
+		m_north <= m_up;
+		m_south <= m_down;
+		m_east  <= m_right;
+		m_west  <= m_left;
+	end
+	else begin
+		m_north <= m_up    & m_right;
+		m_south <= m_down  & m_left;
+		m_east  <= m_right & m_down;
+		m_west  <= m_left  & m_up;		
+	end 
+end
+
 // PAUSE SYSTEM
 wire				pause_cpu;
 wire [7:0]		rgb_out;
@@ -379,16 +397,16 @@ congo_bongo congo_bongo
 	.start1(m_start1),
 	.start2(m_start2),
 
-	.right(m_right),
-	.left(m_left),
-	.up(m_up),
-	.down(m_down),
+	.right(m_east),
+	.left(m_west),
+	.up(m_north),
+	.down(m_south),
 	.fire(m_fire_a),
  
-	.right_c(m_right),
-	.left_c(m_left),
-	.up_c(m_up),
-	.down_c(m_down),
+	.right_c(m_east),
+	.left_c(m_west),
+	.up_c(m_north),
+	.down_c(m_south),
 	.fire_c(m_fire_a),
 
 	.sw1_input(sw[0]), // cocktail(1) / sound(1) / ships(2) / N.U.(2) /  extra ship (2)	

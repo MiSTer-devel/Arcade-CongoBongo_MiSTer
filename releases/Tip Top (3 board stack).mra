@@ -9,6 +9,7 @@
 	<category>Isometric Platform</category>
 	<rotation>vertical (cw)</rotation>
 	<rbf>CongoBongo</rbf>
+	<joystick>4-way diagonal</joystick>
 	<buttons names="Jump,Start 1P,Start 2P,Coin,Pause" default="A,Start,Select,R,L" />
 	<switches default="7F">
 		<dip bits="0,1" name="Bonus at" ids="40.000,20.000,30.000,10.000" />

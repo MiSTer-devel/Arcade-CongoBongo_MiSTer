@@ -3,7 +3,6 @@
 	<homebrew>no</homebrew>
 	<bootleg>no</bootleg>
 	<mameversion>0248</mameversion>
-	<mratimestamp>202211130000</mratimestamp>
 	<year>1983</year>
 	<manufacturer>Sega/Gremlin</manufacturer>
 	<category>Isometric Platform</category>
@@ -11,6 +10,7 @@
 	<setname>congo</setname>
 	<rotation>vertical (cw)</rotation>
 	<rbf>CongoBongo</rbf>
+	<joystick>4-way diagonal</joystick>
 	<switches default="7F">
 		<dip bits="0,1"		name="Bonus at"		ids="40.000,20.000,30.000,10.000"/>
 		<dip bits="2,3"		name="Difficulty"	ids="Hardest, Medium, Hard, Easy"/>
